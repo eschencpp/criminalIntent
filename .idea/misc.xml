@@ -5,6 +5,8 @@
       <map>
         <entry key="..\:/Users/echen/AndroidStudioProjects/criminalIntent/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/echen/AndroidStudioProjects/criminalIntent/app/src/main/res/layout/fragment_crime_detail.xml" value="0.263671875" />
+        <entry key="..\:/Users/echen/AndroidStudioProjects/criminalIntent/app/src/main/res/layout/fragment_crime_list.xml" value="0.3179347826086957" />
+        <entry key="..\:/Users/echen/AndroidStudioProjects/criminalIntent/app/src/main/res/layout/list_item_crime.xml" value="0.15" />
       </map>
     </option>
   </component>
@@ -13,5 +15,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.36666666666666664" />
+      </ProjectState>
+    </option>
   </component>
 </project>
