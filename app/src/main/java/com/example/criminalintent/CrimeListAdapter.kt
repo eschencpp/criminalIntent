@@ -2,6 +2,7 @@ package com.example.criminalintent
 
 import android.app.LauncherActivity
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import android.view.ViewParent
 import android.widget.Toast
@@ -15,12 +16,17 @@ class CrimeHolder(
         binding.crimeTitle.text = crime.title
         binding.crimeDate.text = crime.date.toString()
 
-        binding.root.setOnClickListener{
+        binding.root.setOnClickListener {
             Toast.makeText(
                 binding.root.context,
                 "${crime.title} clicked!",
                 Toast.LENGTH_SHORT
             ).show()
+        }
+        binding.crimeSolved.visibility = if (crime.isSolved) {
+            View.VISIBLE
+        } else {
+            View.GONE
         }
     }
 }
