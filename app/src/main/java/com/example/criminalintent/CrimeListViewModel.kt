@@ -10,19 +10,10 @@ import java.util.*
 private const val TAG = "CrimeListViewModel"
 
 class CrimeListViewModel : ViewModel() {
-    val crimes = mutableListOf<Crime>()
+    private val crimeRepository = CrimeRepository.get()
+    val crimes = crimeRepository.getCrimes()
     init{
-        Log.d(TAG, "init starting")
         viewModelScope.launch {
-            Log.d(TAG, "coroutines launched")
-            crimes += loadCrimes()
-            Log.d(TAG, "Loading crimes finished")
-        }
-
-        suspend fun loadCrimes(): List<Crime> {
-            return CrimeRepository.getCrimes()
         }
     }
-
-
 }
