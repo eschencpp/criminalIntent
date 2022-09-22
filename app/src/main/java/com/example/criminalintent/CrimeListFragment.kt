@@ -15,7 +15,7 @@ import com.example.criminalintent.databinding.FragmentCrimeDetailBinding
 import com.example.criminalintent.databinding.FragmentCrimeListBinding
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
-import  kotlinx.coroutines.flow.collect
+
 
 private const val TAG = "CrimeListFragment"
 
